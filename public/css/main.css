@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+/* ------------------------------------- Header Panel ----------------------------------------*/
+
+#login-header-container{
+    padding-bottom: 10px;
+
+    border-bottom: dotted 3px #9c1010;
+}
+
+#login-upper-border{
+    height: 5px;
+    width: 100%;
+    padding: 5px;
+
+    background-color: #9c1010;
+}
+
+#login-header-panel{
+    padding-top: 10px;
+
+    text-align: center;
+
+    font: 40px 'Segoe UI','Helvetica Neue','Droid Sans',Arial,Tahoma,Sans-serif;
+    color: #343434;
+}
+
+/*---------------------------------- Footer ---------------------------------------*/
+
+#footer{
+    width: 100%;
+    height: 100px;
+    
+    color: beivge;
+    background-color: #FF69B4;
+    float: left;
+    line-height: 1.42857143;
+    text-align: center;
+}
+
+#footer b{
+    font-family: 'Dancing Script'; 
+    font-size: 30px;
+}
+
+#footer p{
+    font-family: 'Dancing Script'; 
+    font-size: 20px; 
+}

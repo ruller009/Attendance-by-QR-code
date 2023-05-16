@@ -1,0 +1,13 @@
+<form action="/lecturer/handle_create_rollcall" method="post">
+    <h1>Chọn mã lớp điểm danh</h1>
+    <select name="id_class">
+        <% results.forEach(function(result) { %>
+            <option value="<%= result.ID_class %>" >
+              <%= result.ID_class %>
+            </option>
+          <% }); %>
+    </select>
+    <br><br>
+    <input type="submit" value="Tạo cuộc điểm danh">
+</form>
+

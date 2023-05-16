@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="css/login/login.css">
+
+<div id="login-form-content">
+    <form action="/login/handle_login" method="post">
+        <table id="login-content">
+            <tbody>
+                <td>
+                    <div id="login-form">
+                        <h2 id="logo-header-title">
+                            <span><img src="images/user.png"></span>
+                            ĐĂNG NHẬP
+                        </h2>
+                        <h3>Vui lòng chọn vai trò đăng nhập</h3>
+                        <span>
+                            <input type="radio" name="career" value="students" v-on:click="method1">
+                            <label for="">Sinh viên đại học</label>
+                        </span>
+                        <br>
+                        <span>
+                            <input type="radio" name="career" value="lecturers" v-on:click="method2">
+                            <label for="">Giảng viên</label>
+                        </span>
+                        <br>
+                        <span>
+                            <input type="radio" name="career" value="staffs" v-on:click="method3">
+                            <label for="">Cán bộ/Nhân viên</label>
+                        </span>
+
+                        <div>
+                            <span> {{label_username}} </span>
+                            <span>
+                                <input type="text" placeholder="Tài khoản" name="username" required>
+                            </span>
+                            <br>
+                            <span> {{label_psw}} </span>
+                            <span>
+                                <input type="password" placeholder="Mật khẩu" name="psw" required>
+                            </span>
+                        </div>
+
+                        <div>
+                            <span>
+                                <input type="submit" value="Đăng nhập">
+                            </span>
+                        </div>
+                    </div>
+                </td>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="javascript/login-javascript.js"></script>
+
